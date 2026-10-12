@@ -310,7 +310,7 @@ if menu == "Home Overview":
         st.plotly_chart(fig, use_container_width=True)
     
     with col2:
-        st.markdown("### Bed Type Utilization")
+        st.markdown("### "Patient Distribution by Bed Type"")
         bed_data = df['Bed_type'].value_counts().reset_index()
         bed_data.columns = ['Bed Type', 'Count']
         
